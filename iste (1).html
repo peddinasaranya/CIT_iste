@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Schedule Slide</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:Segoe UI, sans-serif;
+}
+
+.slide{
+    width:1100px;
+    height:600px;
+    background: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:20px;
+    padding:40px;
+    position:relative;
+    overflow:hidden;
+    
+}
+
+
+.slide::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.title{
+    background:#7f86a3;
+    width:380px;
+    margin:0 auto 35px;
+    padding:14px;
+    text-align:center;
+    font-size:36px;
+    font-weight:900;
+    color:#fff;
+    border-radius:50px;
+    text-shadow:2px 2px 4px #000;
+    position:relative;
+    z-index:2;
+}
+
+
+.content{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    position:relative;
+    z-index:2;
+}
+
+.box{
+    width:48%;
+    background:linear-gradient(180deg,#c7cada,#a8aec7);
+    border-radius:20px;
+    padding:32px;
+    box-shadow:
+        0 10px 18px rgba(0,0,0,0.35),
+        inset 0 0 8px rgba(255,255,255,.4);
+}
+
+.box h2{
+    margin-top:0;
+    font-size:28px;
+    font-weight:900;
+}
+
+.box p{
+    font-size:20px;
+    line-height:1.7;
+}
+.pic{
+position: absolute;
+bottom: -350px;
+left: 25%;
+transform: translateX(-50%);
+    
+    width:10px;
+    z-index: 3;
+
+
+}
+.pic img{
+    width:100%
+    height:auto;
+
+}
+.div{
+    display: block;
+    height: auto;
+    width: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="slide">
+
+    <div class="title">SCHEDULE</div>
+    <div class="div">
+    <div class="content">
+        <div class="box">
+            <h2>PRELIMINARY ROUND:</h2>
+            <p>
+                Candidates can attempt CIT only once in any of the two available slots:<br><br>
+                <b>Slot 1:</b> January 5, 2026 (9:00 PM - 9:45 PM)<br><br>
+                <b>Slot 2:</b> January 6, 2026 (9:00 PM - 9:45 PM)
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>FINAL ROUND:</h2>
+            <p>
+                Selected candidates need to submit a pitching video along with a PowerPoint </p>
+            <p>    
+                presentation based on the problem statements provided through mail.
+            </p>
+        </div>
+      <div class="pic">
+     <img src="pic.jpg"/>
+    </div> 
+       
+
+   
+    
+
+</div>
+
+</body>
+</html>
