@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: url("background.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar{
+    height: 70px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    height: 40px;
+}
+.logo span{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li{
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* CENTER CONTAINER */
+.container{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORM CARD */
+.form-card{
+    width: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    background: linear-gradient(
+        180deg,
+        rgba(5,15,40,0.95),
+        rgba(5,15,40,0.8)
+    );
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+.form-card h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form-card p{
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    gap: 10px;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    outline: none;
+}
+
+input::placeholder{
+    color: #bbb;
+}
+
+select{
+    color: #bbb;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: white;
+    color: black;
+}
